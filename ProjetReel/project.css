@@ -1,0 +1,535 @@
+/* Import de la police Google Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Général */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Fond général clair */
+    color: #2b2d42; /* Couleur de texte par défaut */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 30px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section gauche */
+.left-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.left-section h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2b2d42;
+}
+
+.left-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.left-section .voir-plus {
+    font-weight: 600;
+    color: #2364ef; /* Rouge doux pour les liens */
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.left-section .voir-plus:hover {
+    border-bottom: 2px solid #2623ef;
+}
+
+/* Section centrale (image) */
+.center-section {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.center-section .main-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.center-section .large-text {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2b2d42;
+
+}
+
+/* Section droite */
+.right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-box {
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #a8dadc; /* Bleu ciel doux */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.right-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2b2d42;
+}
+
+.right-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #2b2d42;
+}
+
+.right-box .voir-plus {
+    font-weight: 600;
+    color: #2330ef; /* Rouge doux pour les liens */
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.right-box .voir-plus:hover {
+    border-bottom: 2px solid #2364ef;
+}
+
+/* Style du menu de navigation */
+nav {
+    background-color: #2b2d42; /* Bleu foncé élégant */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet 3D */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #edf2f4; /* Blanc cassé */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px; /* Arrondir les liens */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8d99ae; /* Gris pastel pour survol */
+}
+
+nav ul li a.active {
+    background-color: #2375ef; /* Rouge doux pour lien actif */
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2b2d42; /* Bleu foncé élégant */
+    color: #edf2f4; /* Blanc cassé */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #8d99ae; /* Gris pastel */
+}
+
+.footer-section p, .footer-section ul {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #edf2f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #238cef;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #8d99ae;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #ef233c;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #8d99ae;
+    border-top: 1px solid #edf2f4;
+    padding-top: 10px;
+}
+
+/* Container pour la liste des projets */
+.project-container {
+    padding: 40px;
+    border: 1px solid #007bff;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style pour chaque projet */
+.project {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+.project p {
+    margin: 0;
+}
+
+.project .voir-plus {
+    color: #ef233c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project .voir-plus:hover {
+    text-decoration: underline;
+}
+
+/* Style pour le menu de navigation (si nécessaire, réutilisation du fichier barrenavig.css) */
+nav {
+    background-color: #2b2d42;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8d99ae;
+}
+
+nav ul li a.active {
+    background-color: #ef233c;
+    color: #fff;
+    font-weight: bold;
+}
+/* Container des compétences */
+.competences-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border: 1px solid #007bff;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section gauche - Liste des compétences */
+.competences-left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.competence {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+.competence p {
+    margin: 0;
+}
+
+.competence .voir-preuve {
+    color: #ef233c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.competence .voir-preuve:hover {
+    text-decoration: underline;
+}
+
+/* Section droite - Langages */
+.competences-right {
+    flex: 1;
+    border-left: 1px solid #007bff;
+    padding-left: 20px;
+}
+
+.competences-right h3 {
+    font-size: 20px;
+    color: #2b2d42;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.competences-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.competences-right ul li {
+    font-size: 18px;
+    color: #2b2d42;
+    margin-bottom: 10px;
+}
+
+/* Style pour le menu de navigation */
+nav {
+    background-color: #2b2d42;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+/* Container des expériences professionnelles */
+.experiences-container {
+    padding: 40px;
+    border: 1px solid #007bff;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style pour chaque expérience */
+.experience {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+.experience h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b2d42;
+}
+
+.experience p {
+    font-size: 18px;
+    color: #2b2d42;
+    margin: 5px 0;
+}
+
+.experience .etc {
+    color: #ef233c; /* Couleur rouge doux pour le texte "Etc" */
+}
+
+/* Style pour le menu de navigation */
+nav {
+    background-color: #2b2d42;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8d99ae;
+}
+
+nav ul li a.active {
+    background-color: #ef233c;
+    color: #fff;
+    font-weight: bold;
+}
+/* Container des contacts */
+.contacts-container {
+    padding: 40px;
+    border: 1px solid #007bff;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Informations de contact */
+.contact-info p {
+    font-size: 18px;
+    color: #2b2d42;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
+
+/* Style pour le menu de navigation */
+nav {
+    background-color: #2b2d42;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8d99ae;
+}
+
+nav ul li a.active {
+    background-color: #ef233c;
+    color: #fff;
+    font-weight: bold;
+}
