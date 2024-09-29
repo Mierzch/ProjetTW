@@ -1,0 +1,42 @@
+/* Style du menu */
+nav {
+    background-color: #757575; 
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #333333; 
+    color: #fff;
+}
+
+nav ul li a.active {
+    background-color: #1f1f1f; 
+    color: #fff;
+    font-weight: bold; 
+}
